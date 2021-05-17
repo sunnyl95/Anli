@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import math
-from geohash import decode
+from geohash import geohash_decode
 import math
 from math import pi
 from math import sin, cos
