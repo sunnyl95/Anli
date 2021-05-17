@@ -11,7 +11,7 @@ __decodemap = dict()
 for i in range(len(__base32)):
     __decodemap[__base32[i]] = i
 
-def encode(latitude, longitude, precision=12):
+def geohash_encode(latitude, longitude, precision=12):
     """
     对经纬度信息进行geohash编码
     :param latitude:经度
@@ -92,7 +92,7 @@ def decode_exactly(geohash):
     return lat, lon, lat_err, lon_err
 
 
-def decode(geohash):
+def geohash_decode(geohash):
     """
     将误差考虑进去，进行解码
     :param geohash:

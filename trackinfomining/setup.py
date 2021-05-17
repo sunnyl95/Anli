@@ -10,13 +10,14 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
  
 setup(
     name='trackinfomining',
-    version=1.0,
+    version=2.0,
     description='trajectory information mining package',
     author='sunhuiling',
     author_email='sunnyl95@163.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
+    url = "https://github.com/sunnyl95/Anli/tree/main/trackinfomining",
     classifiers=[  # Optional
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
