@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
  
 setup(
     name='trackinfomining',
-    version=2.0,
+    version=10.0,
     description='trajectory information mining package',
     author='sunhuiling',
     author_email='sunnyl95@163.com',
