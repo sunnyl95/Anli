@@ -4,21 +4,27 @@ from os import path, environ
 from io import open
  
 here = path.abspath(path.dirname(__file__))
- 
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
  
 setup(
-    name='testtrackinfomining',
-    version=4.0,
+    name='trackinfomining',
+    version=2.0,
     description='trajectory information mining package',
     author='sunhuiling',
     author_email='sunnyl95@163.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    packages=find_packages(),
-    package_data={"testtrackinfomining": ["trackinfomining/data/template/*", "trackinfomining/*.txt"]},
-    url = "https://github.com/sunnyl95/Anli/tree/main/trackinfomining",
+    #packages=find_packages(),
+    packages=["trackinfomining", "trackinfomining/data"],
+    include_package_data=True,
+    #package_data={"trackinfomining": ["trackinfomining/data/*.csv", "trackinfomining/*.txt"]},
+    package_data={
+        # If any package contains *.txt or *.rst files, include them:
+        '': ['*.txt', '*.csv'],
+    },
+
+    url = "https://github.com/sunnyl95/Anli/tree/main",
     classifiers=[  # Optional
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
