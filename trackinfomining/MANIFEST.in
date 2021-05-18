@@ -1,1 +1,1 @@
-include  trackinfomining/data/template/*   trackinfomining/*.txt
+include trackinfomining/data/*.csv  trackinfomining/*.txt
