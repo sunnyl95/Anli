@@ -9,14 +9,15 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
  
 setup(
-    name='trackinfomining',
-    version=1.0,
+    name='testtrackinfomining',
+    version=3.0,
     description='trajectory information mining package',
     author='sunhuiling',
     author_email='sunnyl95@163.com',
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
+    package_data={"testtrackinfomining": ["trackinfomining/data/template/*", "trackinfomining/*.txt"]},
     url = "https://github.com/sunnyl95/Anli/tree/main/trackinfomining",
     classifiers=[  # Optional
         'Development Status :: 4 - Beta',
@@ -27,6 +28,6 @@ setup(
     ],
     python_requires='>=3.6, <4',
     install_requires=[
-        'pandas==1.1.5'
+        'pandas>=1.1.5'
     ],
 )
