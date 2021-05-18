@@ -24,7 +24,7 @@ setup(
         '': ['*.txt', '*.csv'],
     },
 
-    url = "https://github.com/sunnyl95/Anli/tree/main",
+    url = "https://github.com/sunnyl95/Anli/tree/main/trackinfomining",
     classifiers=[  # Optional
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
