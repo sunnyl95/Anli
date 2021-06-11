@@ -1,0 +1,33 @@
+optimizer: Sgd(momentum=0.9, weight_decay=1e-4)  Adam()  RAdam()  NAdam()  lookhead()  
+lr: warmup cosine
+loss: focal_loss  labelsmoothing
+
+mixup  cutout  cutmix
+
+swa
+快照集成
+
+knowledge_distillation
+
+Resize()
+
+meanmaxpooling dropout()
+ECA
+CBAM
+switchable_norm  group_norm
+Activation Function: Mish(), Swish()
+
+TTA
+ensemble
+ensemble拼接fc层
+多级分类
+残差图
+将测试集放进去训练
+avg+max
+metrix learning
+图像检索
+尝试对一张图片使用不同尺寸
+改进softmax
+k-folds集成
+
+爬数据
